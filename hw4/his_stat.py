@@ -7,11 +7,6 @@ from numpy.core.fromnumeric import mean
 def his_stat(img):
     h, w, c = img.shape
     result = copy.deepcopy(img)
-    # 填充四周的像素值
-    # result[0] = img[0]
-    # result[h-1] = img[h-1]
-    # result[:, 0] = img[:, 0]
-    # result[:, w-1] = img[:, w-1]
     # 求得图像的均值和标准差
     img_mean = np.mean(img)
     img_std = np.std(img)
